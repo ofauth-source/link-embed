@@ -23,9 +23,6 @@ import {
 	type EmbedLinkMessageSuccess,
 } from "@ofauth/link-embed"
 
-// initialize the link embed
-OFAuthLinkEmbed.init()
-
 // create a Link handler
 const handler: LinkHandler = await OFAuthLinkEmbed.create({
 	url: "https://auth.ofauth.com/s/xxxxxxxxx",
@@ -96,11 +93,17 @@ The `create()` method returns a Promise that resolves to a handler object with t
 	>Login with OFAuth</a
 >
 
-<!-- Either way, include the script -->
+<!-- Either way, you'll need to initialize the embed -->
 <script
 	src="https://unpkg.com/@ofauth/link-embed/dist/embed.global.js"
 	defer
 	data-auto-init></script>
+
+<!-- or manually initialize the embed, if you're using a javascript framework or bundler -->
+<script>
+	import { OFAuthLinkEmbed } from "@ofauth/link-embed"
+	OFAuthLinkEmbed.init()
+</script>
 
 <script>
 	// listen for the success event
