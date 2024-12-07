@@ -7,3 +7,4 @@ tests/
 .npmrc
 tsconfig.json
 scripts/
+.tsup
