@@ -1,20 +1,20 @@
 {
-	"name": "@ofauth/link-embed-root",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"build": "cd link-embed && pnpm build",
-		"changeset": "changeset",
-		"version": "changeset version",
-		"release": "changeset publish",
-		"publish:jsr": "jsr publish"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"private": true,
-	"devDependencies": {
-		"@changesets/cli": "^2.27.12"
-	}
+  "name": "@ofauth/link-embed-root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node init && cd link-embed && pnpm build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "publish:jsr": "jsr publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12"
+  }
 }
