@@ -5,8 +5,8 @@
   "author": "OFAuth",
   "description": "Embed OFAuth Link on your website",
   "scripts": {
-    "dev": "node init && tsup --watch",
-    "build": "node init && tsup --minify terser",
+    "dev": "tsup --watch",
+    "build": "tsup --minify terser",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "changeset publish",
